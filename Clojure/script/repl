@@ -11,4 +11,10 @@ fi
 $COMMAND trampoline run -m clojure.main -e \
 "(require '[cljs.repl :as repl])
 (require '[ambly.core :as ambly])
-(repl/repl (ambly/repl-env))"
+(repl/repl (ambly/repl-env)
+  :foreign-libs [{:file \"libs/greeting.js\"
+       :provides [\"greeting\"]
+       :module-type :commonjs}
+      {:file \"libs/german.js\"
+       :provides [\"german\"]
+       :module-type :commonjs}])"

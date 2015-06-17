@@ -4,6 +4,8 @@
             [cljs.analyzer :as ana]
             [cljs.util :as util]
             [cljs.compiler :as comp]
+            [cljs.env :as env]
+            [cljs.js-deps :as deps]
             [cljs.repl :as repl]
             [cljs.closure :as closure]
             [clojure.data.json :as json])
@@ -519,6 +521,8 @@
           endpoint-port (:port endpoint)
           _ (reset! (:bonjour-name repl-env) bonjour-name)
           webdav-mount-point (mount-webdav (getOs) bonjour-name endpoint-address endpoint-port)
+          opts (closure/process-js-modules (assoc opts :output-dir webdav-mount-point))
+          _ (swap! env/*compiler* assoc :js-dependency-index (deps/js-dependency-index opts))
           _ (reset! (:webdav-mount-point repl-env) webdav-mount-point)
           output-dir (io/file webdav-mount-point)
           env (ana/empty-env)
@@ -587,7 +591,7 @@
                 "\n         is running ClojureScript " actual-clojurescript-version
                 ", while the Ambly REPL is\n         set up to use ClojureScript "
                 expected-clojurescript-version ".\n")))))
-      {:merge-opts {:output-dir webdav-mount-point}})
+      {:merge-opts opts})
     (catch Throwable t
       (tear-down repl-env)
       (throw t))))
