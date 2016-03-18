@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE3E41FA1C9BD28B00CC235D /* ambly.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F11C9BD28B00CC235D /* ambly.h */; };
+		FE3E41FA1C9BD28B00CC235D /* ambly.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F11C9BD28B00CC235D /* ambly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E41FB1C9BD28B00CC235D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE3E41F21C9BD28B00CC235D /* Info.plist */; };
 		FE3E41FC1C9BD28B00CC235D /* ABYContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F41C9BD28B00CC235D /* ABYContextManager.h */; };
 		FE3E41FD1C9BD28B00CC235D /* ABYContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F51C9BD28B00CC235D /* ABYContextManager.m */; };
