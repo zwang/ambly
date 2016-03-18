@@ -15,7 +15,7 @@ FOUNDATION_EXPORT double amblyVersionNumber;
 FOUNDATION_EXPORT const unsigned char amblyVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ambly/PublicHeader.h>
-#import "ABYServer.h"
-#import "ABYUtils.h"
-#import "ABYContextManager.h"
+#import "src/ABYServer.h"
+#import "src/ABYUtils.h"
+#import "src/ABYContextManager.h"
 
