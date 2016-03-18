@@ -7,7 +7,7 @@
 #if TARGET_OS_IPHONE
 #include <UIKit/UIDevice.h>
 #endif
-#include "GCDWebDAVServer.h"
+#include <GCDWebServers/GCDWebDAVServer.h>
 
 /**
  An `ABYMessage` is an immutable value container for message

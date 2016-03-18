@@ -15,6 +15,7 @@
 		FE3E41FF1C9BD28B00CC235D /* ABYServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F71C9BD28B00CC235D /* ABYServer.m */; };
 		FE3E42001C9BD28B00CC235D /* ABYUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F81C9BD28B00CC235D /* ABYUtils.h */; };
 		FE3E42011C9BD28B00CC235D /* ABYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F91C9BD28B00CC235D /* ABYUtils.m */; };
+		FE3E42231C9BD55E00CC235D /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FE3E41F71C9BD28B00CC235D /* ABYServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABYServer.m; sourceTree = "<group>"; };
 		FE3E41F81C9BD28B00CC235D /* ABYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABYUtils.h; sourceTree = "<group>"; };
 		FE3E41F91C9BD28B00CC235D /* ABYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABYUtils.m; sourceTree = "<group>"; };
+		FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/iOS/GCDWebServers.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3E42231C9BD55E00CC235D /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 		FE3E41DC1C9BD1FC00CC235D = {
 			isa = PBXGroup;
 			children = (
+				FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */,
 				FE3E41F11C9BD28B00CC235D /* ambly.h */,
 				FE3E41F21C9BD28B00CC235D /* Info.plist */,
 				FE3E41F31C9BD28B00CC235D /* src */,
@@ -97,6 +101,7 @@
 				FE3E41E21C9BD1FC00CC235D /* Frameworks */,
 				FE3E41E31C9BD1FC00CC235D /* Headers */,
 				FE3E41E41C9BD1FC00CC235D /* Resources */,
+				FE3E42201C9BD51900CC235D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,6 +153,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE3E42201C9BD51900CC235D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/GCDWebServers.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE3E41E11C9BD1FC00CC235D /* Sources */ = {
@@ -258,6 +281,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -275,6 +302,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveC/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
