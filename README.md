@@ -1,16 +1,15 @@
 # Ambly
 
-A [ClojureScript](https://github.com/clojure/clojurescript) REPL into iOS JavaScriptCore.
+A [ClojureScript](https://github.com/clojure/clojurescript) REPL into embedded JavaScriptCore on iOS, OS X, and tvOS.
 
-Ambly is a REPL designed for use when developing hybrid ClojureScript iOS apps.
+Ambly is a REPL designed for use when developing hybrid ClojureScript / native apps.
 
 Ambly comprises a ClojureScript REPL implementation, along with Objective-C code interfacing JavaScriptCore.
 
-An iOS app is included, making it easy to give the REPL a spin. [Watch a demo.](http://youtu.be/TVDkYZJW2MY)
+An iOS and tvOS demo app is included, making it easy to give the REPL a spin.
 
 ```
-platform :ios, '8.0'
-pod "Ambly", "~> 0.6.0"
+pod "Ambly", "~> 0.7.0"
 ```
 
 [![Clojars Project](http://clojars.org/org.omcljs/ambly/latest-version.svg)](http://clojars.org/org.omcljs/ambly)
@@ -40,6 +39,7 @@ $ lein run
 [1] Ambly Demo on iPod touch
 [2] Ambly Demo on iPad
 [3] Ambly Demo on iPhone Simulator (My-Mac-Pro)
+[4] Ambly Demo TV on Apple TV
 
 [R] Refresh
 
@@ -87,6 +87,6 @@ Agreement. Pull requests will be accepted once your electronic CA has been signe
 
 ## Copyright and license
 
-Copyright © 2015 David Nolen
+Copyright © 2015–2016 David Nolen
 
 Licensed under the EPL (see the file LICENSE).
