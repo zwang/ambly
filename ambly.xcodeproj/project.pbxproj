@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		FE3E41FA1C9BD28B00CC235D /* ambly.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F11C9BD28B00CC235D /* ambly.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E41FB1C9BD28B00CC235D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE3E41F21C9BD28B00CC235D /* Info.plist */; };
-		FE3E41FC1C9BD28B00CC235D /* ABYContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F41C9BD28B00CC235D /* ABYContextManager.h */; };
+		FE3E41FC1C9BD28B00CC235D /* ABYContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F41C9BD28B00CC235D /* ABYContextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E41FD1C9BD28B00CC235D /* ABYContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F51C9BD28B00CC235D /* ABYContextManager.m */; };
-		FE3E41FE1C9BD28B00CC235D /* ABYServer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F61C9BD28B00CC235D /* ABYServer.h */; };
+		FE3E41FE1C9BD28B00CC235D /* ABYServer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F61C9BD28B00CC235D /* ABYServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E41FF1C9BD28B00CC235D /* ABYServer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F71C9BD28B00CC235D /* ABYServer.m */; };
-		FE3E42001C9BD28B00CC235D /* ABYUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F81C9BD28B00CC235D /* ABYUtils.h */; };
+		FE3E42001C9BD28B00CC235D /* ABYUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F81C9BD28B00CC235D /* ABYUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E42011C9BD28B00CC235D /* ABYUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F91C9BD28B00CC235D /* ABYUtils.m */; };
 		FE3E42231C9BD55E00CC235D /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */; };
 /* End PBXBuildFile section */
