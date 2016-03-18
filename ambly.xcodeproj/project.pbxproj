@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FE3E41FA1C9BD28B00CC235D /* ambly.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F11C9BD28B00CC235D /* ambly.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE3E41FB1C9BD28B00CC235D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE3E41F21C9BD28B00CC235D /* Info.plist */; };
 		FE3E41FC1C9BD28B00CC235D /* ABYContextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F41C9BD28B00CC235D /* ABYContextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FE3E41FD1C9BD28B00CC235D /* ABYContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3E41F51C9BD28B00CC235D /* ABYContextManager.m */; };
 		FE3E41FE1C9BD28B00CC235D /* ABYServer.h in Headers */ = {isa = PBXBuildFile; fileRef = FE3E41F61C9BD28B00CC235D /* ABYServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,7 +20,6 @@
 /* Begin PBXFileReference section */
 		FE3E41E61C9BD1FC00CC235D /* ambly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ambly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3E41F11C9BD28B00CC235D /* ambly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ambly.h; path = ObjectiveC/ambly.h; sourceTree = "<group>"; };
-		FE3E41F21C9BD28B00CC235D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ObjectiveC/Info.plist; sourceTree = "<group>"; };
 		FE3E41F41C9BD28B00CC235D /* ABYContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABYContextManager.h; sourceTree = "<group>"; };
 		FE3E41F51C9BD28B00CC235D /* ABYContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABYContextManager.m; sourceTree = "<group>"; };
 		FE3E41F61C9BD28B00CC235D /* ABYServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABYServer.h; sourceTree = "<group>"; };
@@ -29,6 +27,7 @@
 		FE3E41F81C9BD28B00CC235D /* ABYUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABYUtils.h; sourceTree = "<group>"; };
 		FE3E41F91C9BD28B00CC235D /* ABYUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABYUtils.m; sourceTree = "<group>"; };
 		FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/iOS/GCDWebServers.framework; sourceTree = "<group>"; };
+		FEF44E491C9C757D00B48E12 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +47,7 @@
 			children = (
 				FE3E42211C9BD55E00CC235D /* GCDWebServers.framework */,
 				FE3E41F11C9BD28B00CC235D /* ambly.h */,
-				FE3E41F21C9BD28B00CC235D /* Info.plist */,
+				FEF44E491C9C757D00B48E12 /* Info.plist */,
 				FE3E41F31C9BD28B00CC235D /* src */,
 				FE3E41E71C9BD1FC00CC235D /* Products */,
 			);
@@ -148,7 +147,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE3E41FB1C9BD28B00CC235D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +283,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveC/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -306,7 +304,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/ObjectiveC/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
